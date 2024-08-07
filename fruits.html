@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+<style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.0.3.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="68951eb5-2e8b-4366-a3cc-cf3e0085c950" data-root-id="p16652" style="display: contents;"></div>
+  
+    <script type="application/json" id="p17357">
+      {"d081890d-b192-4400-90a4-98319153a826":{"version":"3.0.3","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p16652","attributes":{"x_range":{"type":"object","name":"FactorRange","id":"p16662","attributes":{"factors":["Apples","Oranges","Bananas","Pears"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p16654"},"x_scale":{"type":"object","name":"CategoricalScale","id":"p16666"},"y_scale":{"type":"object","name":"LinearScale","id":"p16668"},"title":{"type":"object","name":"Title","id":"p16655","attributes":{"text":"BAR CHART"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p16704","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p16698","attributes":{"selected":{"type":"object","name":"Selection","id":"p16699","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p16700"},"data":{"type":"map","entries":[["x",["Apples","Oranges","Bananas","Pears"]],["top",[20,25,30,35]]]}}},"view":{"type":"object","name":"CDSView","id":"p16705","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p16706"}}},"glyph":{"type":"object","name":"VBar","id":"p16701","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"top"},"line_color":{"type":"value","value":"#1f77b4"},"fill_color":{"type":"value","value":"#1f77b4"}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p16702","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"top"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p16703","attributes":{"x":{"type":"field","field":"x"},"width":{"type":"value","value":0.5},"top":{"type":"field","field":"top"},"line_color":{"type":"value","value":"#1f77b4"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"value","value":"#1f77b4"},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p16661","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p16683"},{"type":"object","name":"WheelZoomTool","id":"p16684"},{"type":"object","name":"BoxZoomTool","id":"p16685","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p16686","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p16687"},{"type":"object","name":"ResetTool","id":"p16688"},{"type":"object","name":"HelpTool","id":"p16689"}]}},"left":[{"type":"object","name":"LinearAxis","id":"p16676","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p16679","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p16677"},"axis_label":"Counts","major_label_policy":{"type":"object","name":"AllLabels","id":"p16678"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p16670","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p16673"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p16671"},"axis_label":"Fruits","major_label_policy":{"type":"object","name":"AllLabels","id":"p16672"}}}],"center":[{"type":"object","name":"Grid","id":"p16675","attributes":{"axis":{"id":"p16670"}}},{"type":"object","name":"Grid","id":"p16682","attributes":{"dimension":1,"axis":{"id":"p16676"}}}]}}]}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p17357').textContent;
+              const render_items = [{"docid":"d081890d-b192-4400-90a4-98319153a826","roots":{"p16652":"68951eb5-2e8b-4366-a3cc-cf3e0085c950"},"root_ids":["p16652"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
